@@ -1,5 +1,4 @@
 # Data sources configuration for wave-insitu
-# Centralized paths for all in-situ data platforms
 
 data_sources:
   saildrone:

@@ -110,11 +110,13 @@ Plus **measured variables** (platform-dependent):
 ```yaml
 data_sources:
   saildrone:
-    cmems: "/home/ref-copernicus-insitu/.../SD"
+    cmems: "/home/ref-copernicus-insitu/INSITU_GLO_PHYBGCWAV_DISCRETE_MYNRT_013_030/cmems_obs-ins_glo_phybgcwav_mynrt_na_irr/history/SD"
     noaa: "/home/datawork-cersat-public/provider/noaa/insitu/saildrone"
     pimep: "/home/datawork-cersat-public/project/pimep/data/saildrone"
+  
   ldl:
     path: "/scale/user/egauvrit/data/insitu/DWSD"
+  
   kub:
     path: "/scale/user/egauvrit/data/insitu/KUB/SWH"
 ```
