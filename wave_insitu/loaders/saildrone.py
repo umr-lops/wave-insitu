@@ -310,7 +310,7 @@ def _haversine_consecutive(lats: np.ndarray, lons: np.ndarray) -> np.ndarray:
 def split_trajectory_segments(
     df: pd.DataFrame,
     base_name: str,
-    max_distance_km: float = 100.0,
+    max_distance_km: float = 200.0,
     min_segment_points: int = 100,
 ) -> pd.DataFrame:
     """
@@ -468,7 +468,7 @@ def normalize_dataset(
 def load_saildrone_file(
     path: str | Path,
     mapping: dict,
-    max_distance_km: float = 100.0,
+    max_distance_km: float = 200.0,
     min_segment_points: int = 100,
 ) -> pd.DataFrame:
     """
@@ -523,7 +523,7 @@ def load_saildrone_file(
 def load_saildrone_catalog(
     catalog_df: pd.DataFrame,
     mapping: dict,
-    max_distance_km: float = 100.0,
+    max_distance_km: float = 200.0,
     min_segment_points: int = 100,
 ) -> pd.DataFrame:
     """
@@ -565,7 +565,7 @@ def load_saildrone_from_dirs(
     sddirs: dict,
     mapping: dict,
     query_condition: str | None = "wave",
-    max_distance_km: float = 100.0,
+    max_distance_km: float = 200.0,
     min_segment_points: int = 100,
     verbose: bool = False,
 ) -> pd.DataFrame:
