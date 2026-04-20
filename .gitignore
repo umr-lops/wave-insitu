@@ -25,7 +25,6 @@ data/
 *.csv
 *.nc
 *.html
-*.cpt
 
 # Output files
 outputs/
