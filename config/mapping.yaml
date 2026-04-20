@@ -1,0 +1,62 @@
+variables:
+  significant_wave_height:
+    - swh
+    - hs
+    - vavh
+    - wave_significant_height
+    - wave_height
+    - sig_wave_height
+    - significant_wave_height
+    - SWH_OBS
+
+  dominant_wave_period:
+    - wave_period
+    - wave_dominant_period
+    - tp
+    - vtpk
+    - peak_period
+
+  dominant_wave_direction:
+    - dominant_direction
+  
+
+  wind_speed:
+    - mean_wind_speed
+    - wind_speed_mean
+    - wind_speed
+    - wspd
+    - mwspd
+    - mwsp
+    - mws
+    - ws
+
+  wind_direction:
+    - mean_wind_direction
+    - wind_direction
+    - wind_dir
+    - wdir
+    - wd
+
+coordinates:
+  longitude:
+    - longitude
+    - lon
+    - long
+    - SWH_OBS_LON
+
+  latitude:
+    - latitude
+    - lat
+    - SWH_OBS_LAT
+
+  time:
+    - time
+    - t
+    - date
+    - datetime
+    - TIMEwave
+
+attributes:
+  sd_id:
+    - drone_id
+    - platform_name

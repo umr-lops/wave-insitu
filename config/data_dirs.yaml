@@ -1,0 +1,14 @@
+# Data sources configuration for wave-insitu
+# Centralized paths for all in-situ data platforms
+
+data_sources:
+  saildrone:
+    cmems: "/home/ref-copernicus-insitu/cdip/insitu/saildrone/SD"
+    noaa: "/home/datawork-cersat-public/provider/noaa/insitu/saildrone"
+    pimep: "/home/datawork-cersat-public/project/pimep/data/saildrone"
+  
+  ldl:
+    path: "/scale/user/egauvrit/data/insitu/DWSD"
+  
+  kub:
+    path: "/scale/user/egauvrit/data/insitu/KUB/SWH"

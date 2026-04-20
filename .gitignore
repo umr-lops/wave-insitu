@@ -1,0 +1,42 @@
+# Ignore patterns for git
+*.pyc
+__pycache__/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+htmlcov/
+.env
+.venv
+env/
+venv/
+micromamba_envs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Data files (but keep catalog structure)
+data/
+*.csv
+*.nc
+*.html
+*.cpt
+
+# Output files
+outputs/
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Old
+old/
+temp/
+tmp/
