@@ -198,25 +198,27 @@ wave-insitu/
 ├── LICENSE
 ├── pyproject.toml
 │
-├── wave_insitu/                        # Main package
-│   ├── utils.py                        # Common utilities (load_mapping, build_reverse_lookup)
+├── wave_insitu/                       # Main package
+│   ├── utils.py                       # Common utilities (load_mapping, build_reverse_lookup)
+│   │   
+|   ├── config/
+│   │   ├── data_dirs.yaml             # Centralized data source paths (recommended)
+│   │   ├── saildrone_dirs.yaml        # Saildrone provider paths (legacy)
+│   │   ├── mapping.yaml               # Variable name aliases
+│   │   └── wind_faozi.cpt             # Wind speed colormap
+│   │   
 │   ├── loaders/
 │   │   ├── saildrone.py               # Saildrone loader
 │   │   ├── ldl.py                     # LDL DWSD loader
 │   │   ├── kub.py                     # KU-Buoys loader
 │   │   └── tc.py                      # Tropical cyclone tracks (CyclObs API)
+│   │
 │   └── visualization/
 │       └── map.py                     # Folium map builder
 │
-├── scripts/
-│   ├── build_insitu_catalog.py        # Build merged catalog
-│   └── build_map_from_catalog.py      # Generate interactive map
-│
-└── config/
-    ├── data_dirs.yaml                 # Centralized data source paths (recommended)
-    ├── saildrone_dirs.yaml            # Saildrone provider paths (legacy)
-    ├── mapping.yaml                   # Variable name aliases
-    └── wind_faozi.cpt                 # Wind speed colormap
+└── scripts/
+    ├── build_insitu_catalog.py        # Build merged catalog
+    └── build_map_from_catalog.py      # Generate interactive map
 ```
 
 ## Python API (Advanced)
