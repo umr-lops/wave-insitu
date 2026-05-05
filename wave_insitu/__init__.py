@@ -18,6 +18,7 @@ __email__ = "edouard.gauvrit@ifremer.fr"
 
 from wave_insitu.loaders import saildrone, ldl, kub, tc
 from wave_insitu.visualization import map
+from wave_insitu.utils import load_mapping
 
 __all__ = [
     "saildrone",
@@ -25,4 +26,5 @@ __all__ = [
     "kub",
     "tc",
     "map",
+    "load_mapping"
 ]
