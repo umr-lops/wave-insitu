@@ -22,7 +22,7 @@ import pandas as pd
 import yaml
 from pathlib import Path
 
-from ..utils import load_mapping, build_reverse_lookup
+from wave_insitu.utils import load_mapping, build_reverse_lookup
 
 
 # ---------------------------------------------------------------------------

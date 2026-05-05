@@ -9,11 +9,10 @@ Author: Edouard Gauvrit (edouard.gauvrit@ifremer.fr)
 import xarray as xr
 import pandas as pd
 import numpy as np
-import yaml
 from pathlib import Path
 from collections.abc import Iterable
 
-from ..utils import load_mapping, build_reverse_lookup
+from wave_insitu.utils import build_reverse_lookup
 
 
 # ---------------------------------------------------------------------------

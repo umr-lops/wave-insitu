@@ -15,7 +15,7 @@ from pathlib import Path
 from tqdm import tqdm
 from netCDF4 import Dataset
 
-from ..utils import load_mapping, build_reverse_lookup
+from wave_insitu.utils import load_mapping, build_reverse_lookup
 
 
 # ---------------------------------------------------------------------------
