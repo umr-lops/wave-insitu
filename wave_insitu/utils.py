@@ -8,9 +8,11 @@ Author: Edouard Gauvrit (edouard.gauvrit@ifremer.fr)
 
 import yaml
 from typing import Dict, Tuple, Set
+from pathlib import Path
+from importlib.resources import files
 
 
-def load_mapping(path: str) -> dict:
+def load_mapping(path: str | Path = None) -> dict:
     """
     Load YAML mapping file for variable/coordinate aliases.
     
@@ -24,8 +26,13 @@ def load_mapping(path: str) -> dict:
     dict
         Loaded mapping dictionary
     """
-    with open(path) as f:
-        return yaml.safe_load(f)
+    if path is None:
+        ressource = files("wave_insitu.config").joinpath("mapping.yaml")
+        with ressource.open("r", encoding="utf-8") as f:
+            return yaml.safe_load(f)
+    else:
+        with open(path) as f:
+            return yaml.safe_load(f)
 
 
 def build_reverse_lookup(mapping: dict) -> dict:
